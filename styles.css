@@ -3,14 +3,18 @@
     src: url(./assets/Norse-Bold.otf);
 }
 
+
+
 :root {
     --hero-text: rgb(255, 255, 255, 1);
+    --right-bg: rgb(244, 246, 247);
+    --form-bg: rgb(255, 255, 255, 1)
 }
 
 body {
     margin: 0;
     padding: 0;
-    font-family: "Roboto", sans-serif
+    font-family: "Roboto", sans-serif;
 }   
 
 main {
@@ -50,26 +54,36 @@ main {
 .right-side {
     display: flex;
     flex-direction: column;
-    margin-left: 5vw;
     box-shadow: inset;
     width: 100%;
+    background-color: var(--right-bg);
+}
+
+.hero-text {
+    font-size: 1.4em;
+    font-weight: bold;
 }
 
 .top-section {
-    height: 33vh;
+    margin-top: 10vh;
     display: flex;
-    align-items: center;
+    align-items: left;
+    flex-direction: column;
+    padding-left: 5vw;
+    padding-bottom: 1vw;
+    width: 60%;
 }
 
 .mid-section {
-    height: 33vh;
-
+    background-color: var(--form-bg);
+    padding-left: 5vw;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    box-shadow: rgba(149, 157, 165, 0.308) 0px 8px 24px;
 }
 
 form {
     width: 30vw;
-
-
 }
 
 form .inputs {
@@ -93,14 +107,15 @@ label {
 }
 
 form input {
-    width: 220px;
+    width: 200px;
     padding: 5px 10px;
     border: 1px solid rgb(211, 211, 211);
     border-radius: 5px;
 }
 
 .bot-section {
-    height: 34vh;
-    align-items: start;
+    margin-top: 3%;
+    padding-left: 3vw;
+    
 
 }
