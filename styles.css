@@ -1,0 +1,106 @@
+@font-face {
+    font-family: Norse;
+    src: url(./assets/Norse-Bold.otf);
+}
+
+:root {
+    --hero-text: rgb(255, 255, 255, 1);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif
+}   
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-side {
+    width: 40vw;
+    height: 100vh;
+    background-image: url(./assets/photo-1585202900225-6d3ac20a6962.avif);
+    background-size: cover;
+    display: flex;  
+    justify-content: center;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.400);
+    margin-top: 30%;
+    height: 17%;
+    width: 100%;
+}
+
+.odin-logo {
+    height: 12vh;
+}
+
+.odin-title {
+    color: var(--hero-text);
+    font-family: Norse;
+    font-size: 12vh;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vw;
+    box-shadow: inset;
+    width: 100%;
+}
+
+.top-section {
+    height: 33vh;
+    display: flex;
+    align-items: center;
+}
+
+.mid-section {
+    height: 33vh;
+
+}
+
+form {
+    width: 30vw;
+
+
+}
+
+form .inputs {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+
+.left-form, .right-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: rgb(71, 71, 71);
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin-top: 30px;
+}
+
+form input {
+    width: 220px;
+    padding: 5px 10px;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 5px;
+}
+
+.bot-section {
+    height: 34vh;
+    align-items: start;
+
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="Stylesheet" href="styles.css"/>
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <div class="left-side">
+            <div class="hero">
+                <img class="odin-logo" src="assets/odin-lined.png"/>
+                <h1 class="odin-title">ODIN</h1>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="top-section">
+                <p>This is not a real website, just a task for the Odin Project.</p>
+            </div>
+            <div class="mid-section">
+                <form action="#" method="get">
+                    <h2>Let's Do this</h2>
+                    <div class="inputs">
+                        <div class="left-form">
+                            <p>
+                                <label for="f-name">First Name</label>
+                                <input class="error" type="text" i="f-name" name="f-name" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ'\- ]{1,50}$" required />
+                            </p>
+                            <p>
+                                <label for="mail">Email</label>
+                                <input class="error" type="email" id="mail" name="usermail" required/>
+                            </p>
+                            <p>
+                                <label for="user-pass">Password</label>
+                                <input class="error" type="password" name="user-pass" id="user-pass" required attern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="Must match with your password"/>
+                            </p>
+                        </div>
+                        <div class="right-form">
+                            <p>
+                                <label for="l-name">Last Name</label>
+                                <input class="error" type="text" id="l-name" name="l-name" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ'\- ]{1,50}$" required />
+                            </p>
+                            <p>
+                                <label for="p-number">Phone Number</label>
+                                <input class="error" type="tel" id="phone" name="phone" required pattern="\d{3}[\s]\d{3}[\s]\d{4}" required title="Must be in the format: 123 456 7890. US only"/>
+                            </p>
+                            <p>
+                                <label for="user-pass-confirm">Confirm Password</label>
+                                <input class="error" type="password" name="user-pass-confirm" id="user-pass-confirm" required attern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="Must match with your password"/>
+                            </p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="bot-section">
+                <button type="submit" class="create">Create Account</button>
+                <p>Already have an account?<a href="#" class="log-in-link">Log in</a></p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
