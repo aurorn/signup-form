@@ -11,20 +11,28 @@
     --form-bg: rgb(255, 255, 255, 1)
 }
 
-body {
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
     margin: 0;
     padding: 0;
+}
+
+body {
     font-family: "Roboto", sans-serif;
 }   
 
 main {
     display: flex;
     flex-direction: row;
+    height: 100vh;
 }
 
 .left-side {
     width: 40vw;
-    height: 100vh;
     background-image: url(./assets/photo-1585202900225-6d3ac20a6962.avif);
     background-size: cover;
     display: flex;  
@@ -54,68 +62,121 @@ main {
 .right-side {
     display: flex;
     flex-direction: column;
-    box-shadow: inset;
     width: 100%;
     background-color: var(--right-bg);
 }
 
 .hero-text {
-    font-size: 1.4em;
+    font-size: 3.2vh;
     font-weight: bold;
 }
 
 .top-section {
+    box-sizing: inherit;
     margin-top: 10vh;
     display: flex;
     align-items: left;
     flex-direction: column;
     padding-left: 5vw;
     padding-bottom: 1vw;
-    width: 60%;
+    width: 80%;
 }
 
 .mid-section {
+    margin-top: 5%;
     background-color: var(--form-bg);
     padding-left: 5vw;
     padding-top: 2%;
-    padding-bottom: 2%;
+    padding-bottom: 3%;
     box-shadow: rgba(149, 157, 165, 0.308) 0px 8px 24px;
+    
 }
 
 form {
-    width: 30vw;
+    width: 100%;
 }
 
 form .inputs {
     display: flex;
     flex-direction: row;
-    gap: 3%;
+    gap: 6.5em;
+    
 }
 
 .left-form, .right-form {
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 label {
     color: rgb(71, 71, 71);
     text-transform: uppercase;
-    font-size: 0.8em;
+    font-size: clamp(.5rem, 3vw, 1.0rem);
     font-weight: bold;
     letter-spacing: 0.1em;
-    margin-top: 30px;
+    margin-bottom: 5px;
 }
 
 form input {
-    width: 200px;
+    width: 100%;
     padding: 5px 10px;
     border: 1px solid rgb(211, 211, 211);
     border-radius: 5px;
 }
 
+
+input:focus {
+    border-color: #4a91e24d; 
+    box-shadow: 0 0 5px rgba(74, 145, 226, 0.281); 
+}
+
+
 .bot-section {
     margin-top: 3%;
-    padding-left: 3vw;
+    padding-left: 5vw;
     
-
 }
+
+button {
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 900;
+    border: 1px solid grey;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 1em 3.5em;
+    color: #ffffff;
+    background-color: #596d48;
+}
+  
+button:hover {
+    background-color: #799562;
+}
+  
+button:active {
+    background-color: #47573a;
+}
+  
+button + p {
+    font-weight: bold;
+}
+  
+button + p > a {
+    text-decoration: none;
+    color: #596d48;
+    font-weight: 900;
+}
+
+
+
+
+.error-message {
+    display: none;
+    color: #ff0000; /* Red color */
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+
+
