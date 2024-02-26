@@ -5,17 +5,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function checkPasswordsMatch() {
         if (passwordInput.value !== '' && confirmPasswordInput.value !== '' && passwordInput.value !== confirmPasswordInput.value) {
-            passwordError.style.display = 'block'; // Display error message if passwords don't match and password is not empty
-            passwordInput.classList.add('error'); // Add error class to highlight the input
-            confirmPasswordInput.classList.add('error'); // Add error class to highlight the input
+            passwordError.style.display = 'block'; 
+            passwordInput.classList.add('error'); 
+            confirmPasswordInput.classList.add('error'); 
         } else {
-            passwordError.style.display = 'none'; // Hide error message
-            passwordInput.classList.remove('error'); // Remove error class
-            confirmPasswordInput.classList.remove('error'); // Remove error class
+            passwordError.style.display = 'none'; 
+            passwordInput.classList.remove('error'); 
+            confirmPasswordInput.classList.remove('error'); 
         }
     }
 
-    // Call checkPasswordsMatch whenever either password input changes
     passwordInput.addEventListener('input', checkPasswordsMatch);
     confirmPasswordInput.addEventListener('input', checkPasswordsMatch);
+
+    checkPasswordsMatch();
 });

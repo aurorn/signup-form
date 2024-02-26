@@ -3,12 +3,10 @@
     src: url(./assets/Norse-Bold.otf);
 }
 
-
-
 :root {
     --hero-text: rgb(255, 255, 255, 1);
     --right-bg: rgb(244, 246, 247);
-    --form-bg: rgb(255, 255, 255, 1)
+    --form-bg: rgb(255, 255, 255, 1);
 }
 
 html {
@@ -43,7 +41,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.400);
+    background-color: rgba(0, 0, 0, 0.4);
     margin-top: 30%;
     height: 17%;
     width: 100%;
@@ -72,10 +70,8 @@ main {
 }
 
 .top-section {
-    box-sizing: inherit;
     margin-top: 10vh;
     display: flex;
-    align-items: left;
     flex-direction: column;
     padding-left: 5vw;
     padding-bottom: 1vw;
@@ -89,7 +85,6 @@ main {
     padding-top: 2%;
     padding-bottom: 3%;
     box-shadow: rgba(149, 157, 165, 0.308) 0px 8px 24px;
-    
 }
 
 form {
@@ -100,7 +95,6 @@ form .inputs {
     display: flex;
     flex-direction: row;
     gap: 6.5em;
-    
 }
 
 .left-form, .right-form {
@@ -112,7 +106,7 @@ form .inputs {
 label {
     color: rgb(71, 71, 71);
     text-transform: uppercase;
-    font-size: clamp(.5rem, 3vw, 1.0rem);
+    font-size: clamp(0.5rem, 3vw, 1rem);
     font-weight: bold;
     letter-spacing: 0.1em;
     margin-bottom: 5px;
@@ -125,17 +119,14 @@ form input {
     border-radius: 5px;
 }
 
-
 input:focus {
     border-color: #4a91e24d; 
     box-shadow: 0 0 5px rgba(74, 145, 226, 0.281); 
 }
 
-
 .bot-section {
     margin-top: 3%;
     padding-left: 5vw;
-    
 }
 
 button {
@@ -149,34 +140,32 @@ button {
     color: #ffffff;
     background-color: #596d48;
 }
-  
+
 button:hover {
     background-color: #799562;
 }
-  
+
 button:active {
     background-color: #47573a;
 }
-  
+
 button + p {
     font-weight: bold;
 }
-  
+
 button + p > a {
     text-decoration: none;
     color: #596d48;
     font-weight: 900;
 }
 
-
-
-
 .error-message {
     display: none;
-    color: #ff0000; /* Red color */
+    color: #ff0000;
     font-size: 0.8rem;
     margin-top: 5px;
 }
 
-
-
+.error {
+    border-color: #ff0000;
+}

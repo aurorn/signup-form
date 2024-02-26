@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
     <link rel="Stylesheet" href="styles.css"/>
     <script src="./script.js" defer></script>
-
 </head>
-
 <body>
     <main>
         <div class="left-side">
@@ -20,47 +17,42 @@
         </div>
         <div class="right-side">
             <div class="top-section">
-                <p class="hero-text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
-                
+                <p class="hero-text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p><br>
                 <p class="hero-text">You <em>know</em> you want to.</p>
             </div>
             <div class="mid-section">
                 <form action="#" method="get">
-                    <h2>Let's Do this</h2>
+                    <h2>Let's do this</h2>
                     <br>
                     <div class="inputs">
                         <div class="left-form">
                             <p>
                                 <label for="f-name">First Name</label>
-                                <input type="text" i="f-name" name="f-name" placeholder="Thor" required />
-                                
+                                <input type="text" id="f-name" name="f-name" placeholder="Thor" required />
                             </p>
                             <p>
                                 <label for="mail">Email</label>
-                                <input type="email" id="mail" name="usermail" placeholder="email@email.com" required/>
-                                
+                                <input type="email" id="mail" name="usermail" placeholder="Email@email.com" required/>
+                            </p>
                             <p>
                                 <label for="user-pass">Password</label>
-                                <input class="error" type="password" name="user-pass" id="user-pass" placeholder="password" required />
-                                
+                                <input class="error" type="password" id="user-pass" name="user-pass" placeholder="Password" required />
+                                <span class="error-message" id="password-error" style="display: none;">* Passwords do not match</span>
                             </p>
                         </div>
                         <div class="right-form">
                             <p>
                                 <label for="l-name">Last Name</label>
                                 <input type="text" id="l-name" name="l-name" placeholder="Odinson" required />
-                                
                             </p>
                             <p>
                                 <label for="p-number">Phone Number</label>
-                                <input type="tel" id="phone" name="phone" placeholder="123 456 7890" required />
-                                
+                                <input type="tel" id="phone" name="phone" placeholder="(123)-456-7890" required />
                             </p>
                             <p>
                                 <label for="user-pass-confirm">Confirm Password</label>
-                                <input class="error" type="password" name="user-pass-confirm" id="user-pass-confirm" placeholder="password" required />
-                                <span class="error-message" id="password-error" style="display: none;">* Passwords do not match</span>
-                                
+                                <input class="error" type="password" id="user-pass-confirm" name="user-pass-confirm" placeholder="Password" required />
+                                <span class="error-message" style="display: none;">* Passwords do not match</span>
                             </p>
                         </div>
                     </div>
@@ -73,5 +65,4 @@
         </div>
     </main>
 </body>
-
 </html>
